@@ -1,0 +1,55 @@
+.encabezado{
+    background-color: #fff159;
+    
+}
+.lupa{
+    background-color: white;
+}
+.navreducido{
+    padding: 0.3rem 0.3rem !important;
+    color:#33333399 !important;
+    
+}
+.navreducido.opcionesUsuario
+{
+    padding: 0.3rem 0.3rem !important;
+    color:#33333399 !important;
+}
+.dropdown-item.favoritos,.container-fluid.favoritos, .show.favoritos, .card-body.notificaciones
+{
+    padding: 0rem !important;
+}
+.dropdown-divider.favoritos, .dropdown-item.notificaciones
+{
+    margin-bottom: 0px !important;
+}
+p.favoritos
+{
+    font-weight: bold;
+    font-size: small;
+}
+ .card.notificaciones
+{
+    border:transparent;
+} 
+.d-block.topCarousel{
+    padding-top: 140px ;
+    height: 600px !important;
+    padding-left: 140px !important;
+    
+}
+
+/*Para monitores de mas de 1369 px de ancho */
+@media (min-width: 1369px) { 
+    .navreducido.opcionesUsuario{
+        padding: 0.8rem 0.8rem !important;
+        color:#33333399 !important;
+        
+    }
+    .d-block.topCarousel{
+        padding-top: 140px ;
+        height: 600px !important;
+        padding-left: 250px !important;
+        
+    }
+  }

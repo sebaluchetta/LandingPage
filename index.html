@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/fontawesome/css/solid.min.css">
+</head>
+<header>
+    <div class=" encabezado conteiner fluid fixed-top">
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-auto">
+                    <a href="#"><img src="img/logo_ml.png" class="img-fluid" alt="logo"></a>
+                </div>
+                <div class="col-6">
+
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Buscador dummy" aria-label="Buscador dummy"
+                            aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <span class="input-group-text lupa" id="basic-addon2"><a href="#"><i
+                                        class="fa-solid fa-magnifying-glass"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <a href="#"><img src="img/promo_nivel_6.png" class="img-fluid" width="340" height="39"
+                            alt="nivel 6"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-auto">
+                    <a href="#"><img src="img/localizacion.png" alt="logo"></a>
+                </div>
+                <div class="col-auto">
+
+                    <ul class="nav justify-content-left ">
+
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link navreducido dropdown-toggle " data-bs-toggle="dropdown" href="#"
+                                role="button" aria-expanded="false">Categoria</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Vehículos</a></li>
+                                <li><a class="dropdown-item" href="#">Inmuebles</a></li>
+                                <li><a class="dropdown-item" href="#">Muebles del hogar</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navreducido" href="#">Ofertas</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link navreducido" href="#">Historial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navreducido" href="#">Supermercado</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navreducido" href="#">Moda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navreducido" href="#">Vender</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navreducido" href="#">Ayuda</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-auto ms-5">
+                    <a href="#"><img src="img/usuario.png" class="img-fluid" alt="logo"></a>
+                </div>
+                <div class="col-auto">
+                    <ul class="nav justify-content-left ">
+                        <li class="nav-item">
+                            <a class="nav-link navreducido opcionesUsuario" href="#">Mis compras</a>
+                        </li>
+
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link navreducido opcionesUsuario dropdown-toggle " data-bs-toggle="dropdown"
+                                href="#" role="button" aria-expanded="false">Favoritos</a>
+                            <ul class="dropdown-menu favoritos">
+                                <li>
+                                    <p class="favoritos">Favoritos</p>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider favoritos">
+                                </li>
+                                <li><a class="dropdown-item favoritos" href="#">
+                                        <div class="container-fluid text-center favoritos">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class=" p-5 border bg-light">
+                                                        <p class="favoritos">Agregá acá los productos que te gustaron
+                                                            para poder verlos mas tarde.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                            </ul>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link navreducido opcionesUsuario" data-bs-toggle="dropdown" href="#"
+                                role="button" aria-expanded="false"><i class="fa-solid fa-bell"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item notificaciones" href="#">
+                                        <div class="card notificaciones">
+                                            <div class="row">
+                                                <div class="card-body notificaciones">
+                                                    <table class="table table-borderless">
+                                                        <th></th>
+                                                        <th>
+                                                            <p class="card-title text-center">Comoda super comoda</p>
+                                                        </th>
+                                                        <th></th>
+                                                        <tr>
+                                                            <td><img src="img/comoda_compra.png" width="50" height="50"
+                                                                    alt="comoda"></td>
+                                                            <td>
+                                                                <p class="card-text">Comenta sobre tu compra.</p>
+                                                            </td>
+                                                            <td><a href="#">Comentar</a> </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                <li><a class="dropdown-item notificaciones" href="#">
+                                        <div class="card notificaciones">
+                                            <div class="card-body notificaciones">
+                                                <table class="table table-borderless">
+                                                    <th></th>
+                                                    <th>
+
+                                                        <p class="card-title text-center">Canilla Cromada</p>
+
+                                                    </th>
+                                                    <th></th>
+                                                    <tr>
+                                                        <td><img src="img/canilla_compra.png" width="50" height="50"
+                                                                alt="canilla"></td>
+                                                        <td>
+                                                            <p class="card-text">Tu canilla esta en camino</p>
+                                                        </td>
+                                                        <td><a href="#">Seguimiento</a> </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                        </div>
+                                    </a></li>
+                                <li><a class="dropdown-item notificaciones" href="#">
+                                        <div class="card notificaciones">
+                                            <div class="row">
+                                                <div class="card-body notificaciones">
+                                                    <table class="table table-borderless">
+                                                        <th></th>
+                                                        <th>
+                                                            <p class="card-title text-center">Juego de toallas</p>
+                                                        </th>
+                                                        <th></th>
+                                                        <tr>
+                                                            <td><img src="img/tolla_compra.png" width="50" height="50"
+                                                                    alt="comoda"></td>
+                                                            <td>
+                                                                <p class="card-text">Completa tu compra</p>
+                                                            </td>
+                                                            <td><a href="#">Pagar</a> </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                            </ul>
+
+                        <li class="nav-item">
+                            <a class="nav-link navreducido opcionesUsuario" href="#"><i
+                                    class="fa-solid fa-cart-shopping"></i></a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<body>
+    <!-- PRIMER CARRUSEL -->
+    <div class="container">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner d-block">
+                <div class="carousel-item active">
+                    <img src="img/banner_11.jpg" class="d-block w-95 topCarousel " data-bs-interval="10000" alt="...">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/banner_12.jpg" class="d-block w-95 topCarousel" data-bs-interval="2000" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/banner_13.png" class="d-block w-95 topCarousel" alt="...">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+        </div>
+
+    </div>
+<!--  FIN PRIMER CARRUSEL -->
+</body>
+<footer>
+
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/7443f9d28e.js" crossorigin="anonymous"></script>
+
+</html>
