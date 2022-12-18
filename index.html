@@ -24,14 +24,14 @@
                         <input type="text" class="form-control" placeholder="Buscador dummy" aria-label="Buscador dummy"
                             aria-describedby="basic-addon2">
                         <div class="input-group-append">
-                            <span class="input-group-text lupa" id="basic-addon2"><a href="#" aria-label="..." aria-label="..."><i
-                                        class="fa-solid fa-magnifying-glass"></i></a></span>
+                            <span class="input-group-text lupa" id="basic-addon2"><a href="#" aria-label="..."
+                                    aria-label="..."><i class="fa-solid fa-magnifying-glass"></i></a></span>
                         </div>
                     </div>
                 </div>
                 <div class="col-auto">
-                    <a href="#" aria-label="..." aria-label="..."><img src="img/promo_nivel_6.png" class="img-fluid" width="340" height="39"
-                            alt="nivel 6"></a>
+                    <a href="#" aria-label="..." aria-label="..."><img src="img/promo_nivel_6.png" class="img-fluid"
+                            width="340" height="39" alt="nivel 6"></a>
                 </div>
             </div>
             <div class="row">
@@ -43,11 +43,13 @@
                     <ul class="nav justify-content-left ">
 
                         <li class="nav-item dropdown ">
-                            <a class="nav-link navreducido dropdown-toggle " data-bs-toggle="dropdown" href="#" aria-label="..."
-                                role="button" aria-expanded="false">Categoria</a>
+                            <a class="nav-link navreducido dropdown-toggle " data-bs-toggle="dropdown" href="#"
+                                aria-label="..." role="button" aria-expanded="false">Categoria</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#" aria-label="..." aria-label="...">Vehículos</a></li>
-                                <li><a class="dropdown-item" href="#" aria-label="..." aria-label="...">Inmuebles</a></li>
+                                <li><a class="dropdown-item" href="#" aria-label="..." aria-label="...">Vehículos</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#" aria-label="..." aria-label="...">Inmuebles</a>
+                                </li>
                                 <li><a class="dropdown-item" href="#" aria-label="...">Muebles del hogar</a></li>
                             </ul>
                         </li>
@@ -108,8 +110,9 @@
                         </li>
                         <li class="nav-item">
                         <li class="nav-item dropdown ">
-                            <a class="nav-link navreducido opcionesUsuario" data-bs-toggle="dropdown" href="#" aria-label="..."
-                                role="button" aria-expanded="false"><i class="fa-solid fa-bell"></i></a>
+                            <a class="nav-link navreducido opcionesUsuario" data-bs-toggle="dropdown" href="#"
+                                aria-label="..." role="button" aria-expanded="false"><i
+                                    class="fa-solid fa-bell"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item notificaciones" href="#" aria-label="...">
                                         <div class="card notificaciones">
@@ -196,8 +199,14 @@
     </div>
 </header>
 
+
 <body>
-    <!-- PRIMER CARRUSEL -->
+
+<!-- 
+    TO DO:
+    los indicators quedaron plano y solo marca el activo el primero -->
+
+    <!-- #region PRIMER CARROUSEL -->
     <div class="container">
         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -245,7 +254,119 @@
         </div>
 
     </div>
-<!--  FIN PRIMER CARRUSEL -->
+    <!-- #endregion -->
+
+    <!-- #region Medios de pago -->
+
+    <div class="container mt-3 mb-3 mdp">
+        <table class="table-responsive table-borderless">
+            <tbody style="height: 90px !important;">
+                <tr class="mdp">
+                    <td class="mdp">
+                        <div class="container-fluid mdp">
+                            <div class="card mb-3 mdp">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="img/mdp-tc.jpg" class="img-fluid rounded-start mdp" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Tarjeta de credito</h6>
+                                            <a href="#" aria-label="Ver promociones bancarias">
+                                                <p class="leyenda">Ver promociones bancarias</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td class="mdp">
+                        <div class="container-fluid mdp">
+                            <div class="card mb-3 mdp">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="img/mdp-td.jpg" class="img-fluid rounded-start mdp" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Tarjeta de debito</h6>
+                                            <a href="#" aria-label="Ver mas">
+                                                <p class="leyenda">Ver mas</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td class="mdp">
+                        <div class="container-fluid mdp">
+                            <div class="card mb-3 mdp">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="img/mdp-cr.jpg" class="img-fluid rounded-start mdp" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Cuotas sin tarjeta</h6>
+                                            <a href="#" aria-label="Mercado credito">
+                                                <p class="leyenda">Conoce mercado credito</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td class="mdp">
+                        <div class="container-fluid mdp">
+                            <div class="card mb-3 mdp">
+                                <div class="row g-0">
+                                    <div class="col-md-4 mdp">
+                                        <img src="img/mdp-efvo.jpg" class="img-fluid rounded-start mdp" alt="...">
+                                    </div>
+                                    <div class="col-md-8 mdp">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Efectivo</h6>
+                                            <a href="#" aria-label="Ver mas">
+                                                <p class="leyenda">Ver efectivo</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td class="mdp">
+                        <div class="container-fluid mdp">
+                            <div class="card mb-3 mdp">
+                                <div class="row g-0">
+                                    <div class="col-md-5 mdp">
+                                        <img src="img/mdp-mas.jpg" class="img-fluid rounded-start mdp" alt="...">
+                                    </div>
+                                    <div class="col-md-7 mdp">
+                                        <div class="card-body">
+                                            <h6 class="card-title"></h6>
+                                            <a href="#" aria-label="Ver mas">
+                                                <p class="leyenda"></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- #endregion -->
+
 </body>
 <footer>
 

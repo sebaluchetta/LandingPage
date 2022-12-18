@@ -1,55 +1,121 @@
-.encabezado{
-    background-color: #fff159;
-    
+body {
+    background-color: #ebebeb;
 }
-.lupa{
+
+/* #region Encabezado  */
+
+.encabezado {
+    background-color: #fff159;
+
+}
+
+.lupa {
     background-color: white;
 }
-.navreducido{
+
+.navreducido {
     padding: 0.3rem 0.3rem !important;
-    color:#33333399 !important;
-    
+    color: #33333399 !important;
+
 }
-.navreducido.opcionesUsuario
-{
+
+.navreducido.opcionesUsuario {
     padding: 0.3rem 0.3rem !important;
-    color:#33333399 !important;
+    color: #33333399 !important;
 }
-.dropdown-item.favoritos,.container-fluid.favoritos, .show.favoritos, .card-body.notificaciones
-{
+
+.dropdown-item.favoritos,
+.container-fluid.favoritos,
+.show.favoritos,
+.card-body.notificaciones {
     padding: 0rem !important;
 }
-.dropdown-divider.favoritos, .dropdown-item.notificaciones
-{
+
+.dropdown-divider.favoritos,
+.dropdown-item.notificaciones {
     margin-bottom: 0px !important;
 }
-p.favoritos
-{
+
+p.favoritos {
     font-weight: bold;
     font-size: small;
 }
- .card.notificaciones
-{
-    border:transparent;
-} 
-.d-block.topCarousel{
-    padding-top: 140px ;
-    height: 600px !important;
-    padding-left: 140px !important;
-    
+
+.card.notificaciones {
+    border: transparent;
 }
 
-/*Para monitores de mas de 1369 px de ancho */
-@media (min-width: 1369px) { 
-    .navreducido.opcionesUsuario{
+/* #endregion */
+
+/* #region Carrousel */
+.d-block.topCarousel {
+    padding-top: 90px;
+    height: 600px !important;
+    padding-left: 140px !important;
+
+}
+
+/* #endregion */
+
+/* #region Medio de pago */
+p.leyenda {
+    font-size: 11px !important;
+}
+
+td.mdp {
+    padding: 0px;
+}
+
+.card.mdp,
+.container-fluid.mdp {
+    padding: 0px !important;
+    margin: 0px !important;
+    height: 100px !important;
+    border: 0px !important;
+
+
+}
+
+.container.mdp {
+    border: 1px !important;
+    padding: 4px;
+    background-color: #fff;
+
+}
+
+tbody.mdp {
+    height: 600px !important;
+    padding: 0px !important;
+
+    display: contents !important;
+
+}
+
+/* #endregion */
+
+/* #region Media Queries */
+@media (min-width: 1369px) {
+    .navreducido.opcionesUsuario {
         padding: 0.8rem 0.8rem !important;
-        color:#33333399 !important;
-        
+        color: #33333399 !important;
+
     }
-    .d-block.topCarousel{
-        padding-top: 140px ;
+
+    .d-block.topCarousel {
+        padding-top: 140px;
         height: 600px !important;
         padding-left: 250px !important;
-        
+
     }
-  }
+}
+
+@media (max-witdh: 990px) {
+
+    p.leyenda,
+    h6.card-title {
+        color: green !important;
+        background-color: #fff159 !important;
+    }
+}
+
+/* #endregion */
