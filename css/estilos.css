@@ -51,10 +51,13 @@ p.favoritos {
 .d-block.topCarousel {
     padding-top: 90px;
     height: 600px !important;
-    padding-left: 140px !important;
+    padding-left: 132.5px !important;
+    
 
 }
-
+.carousel-control-next{
+    padding-left: 110px !important;
+}
 /* #endregion */
 
 /* #region Medio de pago */
@@ -93,6 +96,27 @@ tbody.mdp {
 
 /* #endregion */
 
+p.historial,p.rubro{
+    padding: 0px !important;
+text-align: left !important;
+    margin-top: 10px !important;
+    margin-left: -55px !important;
+}
+p.rubro{
+    padding: 0px !important;
+text-align: left !important;
+    margin-top: 10px !important;
+    margin-left: -75px !important;
+}
+p.ofertas{
+    padding: 0px !important;
+text-align: left !important;
+    margin-top: 10px !important;
+    margin-left: 10px !important;
+}
+h3.historial{
+    font-weight: 100;
+}
 /* #region Media Queries */
 @media (min-width: 1369px) {
     .navreducido.opcionesUsuario {
@@ -106,6 +130,9 @@ tbody.mdp {
         height: 600px !important;
         padding-left: 250px !important;
 
+    }
+    .carousel-control-next{
+        padding-left: 46px !important;
     }
 }
 

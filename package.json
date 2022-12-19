@@ -1,0 +1,22 @@
+{
+  "name": "landingpage",
+  "version": "1.0.0",
+  "description": "Tp landing page para DePc Suite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cbaderivado/LandingPage.git"
+  },
+  "author": "Sebastian Luchetta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cbaderivado/LandingPage/issues"
+  },
+  "homepage": "https://github.com/cbaderivado/LandingPage#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}
