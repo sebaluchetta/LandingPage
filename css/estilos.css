@@ -140,7 +140,7 @@ img.card-img-top{
 
 .ultimavisita.container{
     margin-bottom: 100px !important;
-    /* margin-left: 80px !important; */
+    
 
     
 }
@@ -163,6 +163,26 @@ img.card-img-top{
     .carousel-control-next {
         padding-left: 46px !important;
     }
+    p.historial,
+p.rubro {
+    padding: 0px !important;
+    text-align: left !important;
+    margin-top: 10px !important;
+    margin-left: -115px !important;
+}
+
+p.rubro {
+    padding: 0px !important;
+    text-align: left !important;
+    margin-top: 10px !important;
+    margin-left: -165px !important;
+}
+p.ofertas {
+    padding: 0px !important;
+    text-align: left !important;
+    margin-top: 10px !important;
+    margin-left: -5px !important;
+}
 }
 
 @media (max-witdh: 990px) {
