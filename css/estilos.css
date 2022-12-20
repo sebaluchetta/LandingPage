@@ -127,23 +127,21 @@ h3.historial {
 
 /* #endregion */
 
-.card{
-    height: 350px;
-    width: 224px;
+.ultimavisita.card{
+    height: 350px !important;
+    width: 180px !important;
 }
 img.card-img-top{
     height: 224px !important;
-    width: 200px !important;
+    width: 150px !important;
     
     
 }
-.um.card-body{
-    border-top: 100px !important;
-    border-color: yellowgreen !important;
-}
-.container-fluid.ultimaVisita{
+
+.ultimavisita.container{
     margin-bottom: 100px !important;
-    margin-left: 100px !important;
+    /* margin-left: 80px !important; */
+
     
 }
 
