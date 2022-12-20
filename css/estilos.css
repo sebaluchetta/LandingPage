@@ -52,12 +52,14 @@ p.favoritos {
     padding-top: 90px;
     height: 600px !important;
     padding-left: 132.5px !important;
-    
+
 
 }
-.carousel-control-next{
+
+.carousel-control-next {
     padding-left: 110px !important;
 }
+
 /* #endregion */
 
 /* #region Medio de pago */
@@ -96,27 +98,55 @@ tbody.mdp {
 
 /* #endregion */
 
-p.historial,p.rubro{
+/* #region  titulos */
+p.historial,
+p.rubro {
     padding: 0px !important;
-text-align: left !important;
+    text-align: left !important;
     margin-top: 10px !important;
     margin-left: -55px !important;
 }
-p.rubro{
+
+p.rubro {
     padding: 0px !important;
-text-align: left !important;
+    text-align: left !important;
     margin-top: 10px !important;
     margin-left: -75px !important;
 }
-p.ofertas{
+
+p.ofertas {
     padding: 0px !important;
-text-align: left !important;
+    text-align: left !important;
     margin-top: 10px !important;
     margin-left: 10px !important;
 }
-h3.historial{
+
+h3.historial {
     font-weight: 100;
 }
+
+/* #endregion */
+
+.card{
+    height: 350px;
+    width: 224px;
+}
+img.card-img-top{
+    height: 224px !important;
+    width: 200px !important;
+    
+    
+}
+.um.card-body{
+    border-top: 100px !important;
+    border-color: yellowgreen !important;
+}
+.container-fluid.ultimaVisita{
+    margin-bottom: 100px !important;
+    margin-left: 100px !important;
+    
+}
+
 /* #region Media Queries */
 @media (min-width: 1369px) {
     .navreducido.opcionesUsuario {
@@ -131,7 +161,8 @@ h3.historial{
         padding-left: 250px !important;
 
     }
-    .carousel-control-next{
+
+    .carousel-control-next {
         padding-left: 46px !important;
     }
 }
