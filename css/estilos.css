@@ -47,7 +47,7 @@ p.favoritos {
 
 /* #endregion */
 
-/* #region Carrousel */
+/* #region  Primer Carousel */
 .d-block.topCarousel {
     padding-top: 90px;
     height: 600px !important;
@@ -98,7 +98,7 @@ tbody.mdp {
 
 /* #endregion */
 
-/* #region  titulos */
+/* #region  Titulos */
 p.historial,
 p.rubro {
     padding: 0px !important;
@@ -127,23 +127,40 @@ h3.historial {
 
 /* #endregion */
 
-.ultimavisita.card{
+/* #region  3 Carousels */
+
+.ultimavisita.card {
     height: 350px !important;
-    width: 180px !important;
+    width: 210px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
 }
-img.card-img-top{
+}
+
+img.card-img-top {
     height: 224px !important;
-    width: 150px !important;
-    
-    
+    width: 209px !important;
+    align-items: center !important;
 }
 
-.ultimavisita.container{
-    margin-bottom: 100px !important;
-    
-
-    
+.ultimavisitaprecio {
+    padding: 0px !important;
+    margin: 0px !important;
 }
+
+.ultimavisitadescuento,
+.ultimavisitaenvio {
+    color: #00a650;
+    margin-bottom: 0rem !important;
+}
+
+.ultimavisitacuotas {
+    font-weight: 300;
+    font-size: medium;
+    margin-bottom: 0rem !important;
+}
+
+/* #endregion */
 
 /* #region Media Queries */
 @media (min-width: 1369px) {
@@ -163,26 +180,38 @@ img.card-img-top{
     .carousel-control-next {
         padding-left: 46px !important;
     }
-    p.historial,
-p.rubro {
-    padding: 0px !important;
-    text-align: left !important;
-    margin-top: 10px !important;
-    margin-left: -115px !important;
-}
 
-p.rubro {
-    padding: 0px !important;
-    text-align: left !important;
-    margin-top: 10px !important;
-    margin-left: -165px !important;
-}
-p.ofertas {
-    padding: 0px !important;
-    text-align: left !important;
-    margin-top: 10px !important;
-    margin-left: -5px !important;
-}
+    p.historial,
+    p.rubro {
+        padding: 0px !important;
+        text-align: left !important;
+        margin-top: 10px !important;
+        margin-left: -115px !important;
+    }
+
+    p.rubro {
+        padding: 0px !important;
+        text-align: left !important;
+        margin-top: 10px !important;
+        margin-left: -165px !important;
+    }
+
+    p.ofertas {
+        padding: 0px !important;
+        text-align: left !important;
+        margin-top: 10px !important;
+        margin-left: -5px !important;
+    }
+
+    .ultimavisita.card {
+        height: 350px !important;
+        width: 210px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        margin: 2.5rem;
+
+    }
+
 }
 
 @media (max-witdh: 990px) {
