@@ -56,9 +56,17 @@ p.favoritos {
 .container-fluid.Imagenes{
     padding: 0%;
 }
+.carousel-control-prev.Imagenes{
+    margin-left: -6rem;
+}
 
-
-
+.carousel-control-next.Imagenes{
+    margin-right: -6rem;
+}
+.carousel-control-prev-icon.Imagenes:hover,.carousel-control-next-icon.Imagenes:hover{
+    border-radius: 1rem;
+    background-color: rgb(0, 0, 0);
+}
 
 
 /* #endregion */
@@ -176,6 +184,13 @@ img.card-img-top {
         padding-left: 10.5rem;
         padding-right: 10.5rem;
         
+    } */
+    
+    /* .carousel-control-prev.Imagenes{
+        margin-left: -9rem;
+    } */
+    /* .carousel-control-next.Imagenes{
+        margin-left: -9rem;
     } */
     .d-block.topCarousel {
         padding-top: 140px;
