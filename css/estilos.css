@@ -2,6 +2,8 @@ body {
     background-color: #ebebeb;
 }
 
+
+
 /* #region Encabezado  */
 
 .encabezado {
@@ -49,16 +51,15 @@ p.favoritos {
 
 /* #region  Primer Carousel */
 .d-block.topCarousel {
-    padding-top: 90px;
-    height: 600px !important;
-    padding-left: 132.5px !important;
-
-
+    margin-top: -20px !important;
+}
+.container-fluid.Imagenes{
+    padding: 0%;
 }
 
-.carousel-control-next {
-    padding-left: 110px !important;
-}
+
+
+
 
 /* #endregion */
 
@@ -163,6 +164,7 @@ img.card-img-top {
 /* #endregion */
 
 /* #region Media Queries */
+
 @media (min-width: 1369px) {
     .navreducido.opcionesUsuario {
         padding: 0.8rem 0.8rem !important;
@@ -170,16 +172,19 @@ img.card-img-top {
 
     }
 
+    /* .container-fluid.Imagenes{
+        padding-left: 10.5rem;
+        padding-right: 10.5rem;
+        
+    } */
     .d-block.topCarousel {
         padding-top: 140px;
         height: 600px !important;
-        padding-left: 250px !important;
+        
 
     }
 
-    .carousel-control-next {
-        padding-left: 46px !important;
-    }
+   
 
     p.historial,
     p.rubro {
