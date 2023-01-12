@@ -222,21 +222,25 @@ img.card-img-top {
 /* #region Media Queries */
 
 /* #region  Tabla suscripcion */
-.table.suscripcion{
+.table.suscripcion {
     padding-top: 5rem !important;
+    
 }
+
 .encabezadosuscripcion {
     background: rgb(1, 95, 135);
     background: linear-gradient(90deg, rgba(1, 95, 135, 1) 0%, rgba(1, 117, 158, 1) 0%, rgba(148, 6, 255, 1) 0%, rgba(210, 25, 196, 1) 49%, rgba(2, 0, 36, 1) 100%);
     color: white;
 
 }
-.preciotachado{
+
+.preciotachado {
     text-decoration: line-through;
     font-weight: 100;
     padding: 0%;
 }
-.precioactual{
+
+.precioactual {
     font-weight: 1400;
     padding: 0%;
     text-align: end;
@@ -245,6 +249,17 @@ img.card-img-top {
 
 /* #endregion */
 
+/* #region  Tabla Beneficios */
+p.beneficios{
+    margin-left: -5rem;
+    padding: 0px !important;
+    text-align: left !important;
+    margin-top: 10px !important;
+    margin-left: -6rem !important;
+}
+
+
+/* #endregion */
 @media (min-width: 1369px) {
     .navreducido.opcionesUsuario {
         padding: 0.8rem 0.8rem !important;
@@ -312,9 +327,27 @@ img.card-img-top {
         margin: 2.5rem;
 
     }
+    p.beneficios{
+     
+        padding: 0px !important;
+        text-align: left !important;
+        margin-top: 10px !important;
+        margin-left: -10.5rem !important;
+    }
 
 }
-
+.dobleImagen{
+    height: 18rem !important;
+    padding: 0% !important;
+    margin: 0%;
+}
+.dobleImagen.izq{
+    width: 100%;
+    margin-left: 1rem;
+}
+.dobleImagen.der{
+    margin-left:-1rem;
+}
 @media (max-witdh: 990px) {
 
     p.leyenda,
