@@ -1,5 +1,7 @@
 body {
     background-color: #ebebeb;
+    text-align: center;
+
 }
 
 
@@ -232,20 +234,67 @@ img.card-img-top {
     background: linear-gradient(90deg, rgba(1, 95, 135, 1) 0%, rgba(1, 117, 158, 1) 0%, rgba(148, 6, 255, 1) 0%, rgba(210, 25, 196, 1) 49%, rgba(2, 0, 36, 1) 100%);
     color: white;
 
+
+}
+.row.tituloEncabezado{
+    padding: .5rem;
+}
+.precios{
+    padding: 0%;
 }
 
+.separador{
+    padding: 0%;
+    padding-top: 2rem;
+    margin:0%;
+    margin-right: 0.5rem;
+    margin-left: 4rem;
+    background-color: #ebebeb;
+    width: .15rem;
+    height: 35px;
+}
 .preciotachado {
     text-decoration: line-through;
     font-weight: 100;
+    font-size: smaller;
     padding: 0%;
+    margin-bottom: 0%;
+    margin-left: 0rem;
+
+    
 }
 
 .precioactual {
-    font-weight: 1400;
+    font-weight: 800;
+    font-size: large;
     padding: 0%;
-    text-align: end;
+    
+    margin-left: 0rem;
+    margin-top: -0.5rem;
 }
-
+    
+ .card.suscripcion{
+    width: 100%;
+    height: 100%;
+    border: 0rem;
+    
+ }  
+ .card-title.suscripcion{
+    vertical-align: middle;
+    margin-top: 2rem;
+    font-weight: 400;
+    text-align: left;
+ }
+ .img-fluid.rounded-start.suscripcion{
+    border-color: black;
+    border-radius: 20px;
+ }
+.botonSuscribite{
+     padding: .0rem 1.5rem .0rem 1.rem;
+}
+p.botonSuscribite{
+    margin: 0%;
+}
 
 /* #endregion */
 
@@ -327,6 +376,20 @@ p.beneficios{
         margin: 2.5rem;
 
     }
+    .col-10.tituloEncabezado{
+        margin-right: 6rem;
+    }
+    
+  
+    .separador{
+        padding: 0%;
+        padding-top: 2rem;
+        margin:0%;
+        margin-right: 0.5rem;
+        background-color: #ebebeb;
+        width: .10rem;
+        height: 35px;
+    }
     p.beneficios{
      
         padding: 0px !important;
@@ -336,6 +399,9 @@ p.beneficios{
     }
 
 }
+
+
+
 .dobleImagen{
     height: 18rem !important;
     padding: 0% !important;
