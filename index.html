@@ -203,26 +203,16 @@
 
 
     <!-- #region Primer Carousel -->
-    <!-- TO DO:
-    los indicators quedaron planos y solo marca el activo el primero. Mejorar con scss -->
+    
     <div class="container-fluid Imagenes">
         <div id="CarouselImagenes" class="carousel carousel-dark slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#CarouselImagenes" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#CarouselImagenes" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#CarouselImagenes" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-
             <div class="carousel-inner d-block">
                 <div class="carousel-item active">
-                    <img src="img/banner_11.jpg" class="d-block w-100 topCarousel " data-bs-interval="10000" alt="...">
+                    <img src="img/banner_11.jpg" class="d-block w-100 topCarousel " data-bs-interval="0" alt="...">
                 </div>
 
                 <div class="carousel-item">
-                    <img src="img/banner_12.jpg" class="d-block w-100 topCarousel" data-bs-interval="2000" alt="...">
+                    <img src="img/banner_12.jpg" class="d-block w-100 topCarousel" data-bs-interval="0" alt="...">
                 </div>
                 <div class="carousel-item">
                     <img src="img/banner_13.png" class="d-block w-100 topCarousel" alt="...">
@@ -239,17 +229,18 @@
                 <span class="carousel-control-next-icon Imagenes" aria-hidden="true"></span>
                 <span class="visually-hidden">Siguiente</span>
             </button>
-        </div>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                <button type="button" data-bs-target="#CarouselImagenes" data-bs-slide-to="0" class="active indicadores"
                     aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                <button type="button" data-bs-target="#CarouselImagenes" data-bs-slide-to="1" class="indicadores"
                     aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#CarouselImagenes" data-bs-slide-to="2"
+                    aria-label="Slide 3" class="indicadores"> </button>
             </div>
         </div>
+        
+
+    
 
     </div>
     <!-- #endregion -->

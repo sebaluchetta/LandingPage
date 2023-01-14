@@ -95,7 +95,14 @@ p.favoritos {
     margin-right: 8rem;
 }
 
-
+.indicadores{
+    height: 0.50rem !important;
+    width: 0.50rem !important;
+    border: 0 !important;
+    border-radius: 136px !important;
+    border-color: black !important;
+    background-color: cornsilk !important;
+}
 /* #endregion */
 
 /* #region Medio de pago */
