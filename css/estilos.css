@@ -245,10 +245,13 @@ img.card-img-top {
 
 }
 
-.row.tituloEncabezado {
+.row.tituloEncabezado,.bajadasuscripcion {
     padding: .5rem;
+    text-align: start !important;
 }
-
+.itemsuscripcion{
+    border-bottom: transparent!important;
+}
 .precios {
     padding: 0%;
 }
@@ -313,7 +316,7 @@ p.botonSuscribite {
 
 /* #endregion */
 
-/* #region  Tabla Beneficios */
+/* #region  Beneficios */
 p.beneficios {
     margin-left: -5rem;
     padding: 0px !important;
@@ -323,8 +326,17 @@ p.beneficios {
 }
 
 
+
 /* #endregion */
 
+/* #region  doble imagen */
+.dobleImagen.der {
+    margin-left: -1rem;
+    height: 100%;
+
+}
+
+/* #endregion */
 /* #region  marcas */
 .card.marcas {
     width: 16.5rem;
@@ -335,7 +347,7 @@ p.beneficios {
 
 .card-img-top.marcas {
     width: 100% !important;
-
+    
 }
 
 /* #endregion */
@@ -429,26 +441,28 @@ p.beneficios {
         margin-top: 10px !important;
         margin-left: -10.5rem !important;
     }
+
     .dobleImagen {
         height: 18rem !important;
         padding: 0% !important;
         margin: 0%;
     }
-    
+
     .dobleImagen.izq {
         width: 100%;
         margin-left: 1rem;
     }
-    
+
     .dobleImagen.der {
         margin-left: -1rem;
+
     }
-    
+
     .dobleCard:hover,
     .card.marcas:hover {
         box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.20), 0 2px 3px 0 rgba(0, 0, 0, 0.20);
     }
-    
+
     .card.marcas {
         width: 19rem;
         height: 23rem;
