@@ -95,7 +95,7 @@ p.favoritos {
     margin-right: 8rem;
 }
 
-.indicadores{
+.indicadores {
     height: 0.50rem !important;
     width: 0.50rem !important;
     border: 0 !important;
@@ -103,6 +103,7 @@ p.favoritos {
     border-color: black !important;
     background-color: cornsilk !important;
 }
+
 /* #endregion */
 
 /* #region Medio de pago */
@@ -233,7 +234,7 @@ img.card-img-top {
 /* #region  Tabla suscripcion */
 .table.suscripcion {
     padding-top: 5rem !important;
-    
+
 }
 
 .encabezadosuscripcion {
@@ -243,23 +244,26 @@ img.card-img-top {
 
 
 }
-.row.tituloEncabezado{
+
+.row.tituloEncabezado {
     padding: .5rem;
 }
-.precios{
+
+.precios {
     padding: 0%;
 }
 
-.separador{
+.separador {
     padding: 0%;
     padding-top: 2rem;
-    margin:0%;
+    margin: 0%;
     margin-right: 0.5rem;
     margin-left: 4rem;
     background-color: #ebebeb;
     width: .15rem;
     height: 35px;
 }
+
 .preciotachado {
     text-decoration: line-through;
     font-weight: 100;
@@ -268,45 +272,49 @@ img.card-img-top {
     margin-bottom: 0%;
     margin-left: 0rem;
 
-    
+
 }
 
 .precioactual {
     font-weight: 800;
     font-size: large;
     padding: 0%;
-    
+
     margin-left: 0rem;
     margin-top: -0.5rem;
 }
-    
- .card.suscripcion{
+
+.card.suscripcion {
     width: 100%;
     height: 100%;
     border: 0rem;
-    
- }  
- .card-title.suscripcion{
+
+}
+
+.card-title.suscripcion {
     vertical-align: middle;
     margin-top: 2rem;
     font-weight: 400;
     text-align: left;
- }
- .img-fluid.rounded-start.suscripcion{
+}
+
+.img-fluid.rounded-start.suscripcion {
     border-color: black;
     border-radius: 20px;
- }
-.botonSuscribite{
-     padding: .0rem 1.5rem .0rem 1.rem;
 }
-p.botonSuscribite{
+
+.botonSuscribite {
+    padding: .0rem 1.5rem .0rem 1.rem;
+}
+
+p.botonSuscribite {
     margin: 0%;
 }
 
 /* #endregion */
 
 /* #region  Tabla Beneficios */
-p.beneficios{
+p.beneficios {
     margin-left: -5rem;
     padding: 0px !important;
     text-align: left !important;
@@ -314,6 +322,21 @@ p.beneficios{
     margin-left: -6rem !important;
 }
 
+
+/* #endregion */
+
+/* #region  marcas */
+.card.marcas {
+    width: 16.5rem;
+    height: 21rem;
+    padding: 0%;
+    padding-bottom: 1rem;
+}
+
+.card-img-top.marcas {
+    width: 100% !important;
+
+}
 
 /* #endregion */
 @media (min-width: 1369px) {
@@ -383,47 +406,62 @@ p.beneficios{
         margin: 2.5rem;
 
     }
-    .col-10.tituloEncabezado{
+
+    .col-10.tituloEncabezado {
         margin-right: 6rem;
     }
-    
-  
-    .separador{
+
+
+    .separador {
         padding: 0%;
         padding-top: 2rem;
-        margin:0%;
+        margin: 0%;
         margin-right: 0.5rem;
         background-color: #ebebeb;
         width: .10rem;
         height: 35px;
     }
-    p.beneficios{
-     
+
+    p.beneficios {
+
         padding: 0px !important;
         text-align: left !important;
         margin-top: 10px !important;
         margin-left: -10.5rem !important;
+    }
+    .dobleImagen {
+        height: 18rem !important;
+        padding: 0% !important;
+        margin: 0%;
+    }
+    
+    .dobleImagen.izq {
+        width: 100%;
+        margin-left: 1rem;
+    }
+    
+    .dobleImagen.der {
+        margin-left: -1rem;
+    }
+    
+    .dobleCard:hover,
+    .card.marcas:hover {
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.20), 0 2px 3px 0 rgba(0, 0, 0, 0.20);
+    }
+    
+    .card.marcas {
+        width: 19rem;
+        height: 23rem;
+        padding: 0%;
+        padding-bottom: 1rem;
     }
 
 }
 
 
 
-.dobleImagen{
-    height: 18rem !important;
-    padding: 0% !important;
-    margin: 0%;
-}
-.dobleImagen.izq{
-    width: 100%;
-    margin-left: 1rem;
-}
-.dobleImagen.der{
-    margin-left:-1rem;
-}
-.dobleCard:hover{
-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.20), 0 2px 3px 0 rgba(0, 0, 0, 0.20);
-}
+
+
 @media (max-witdh: 990px) {
 
     p.leyenda,
