@@ -4,7 +4,10 @@ body {
 
 }
 
-
+.dobleCard:hover,
+.card.marcas:hover, .tuhistorial.card:hover {
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.20), 0 2px 3px 0 rgba(0, 0, 0, 0.20);
+}
 
 /* #region Encabezado  */
 
@@ -356,6 +359,7 @@ p.beneficios {
     height: 21rem;
     padding: 0%;
     padding-bottom: 1rem;
+    cursor: pointer;
 }
 
 .card-img-top.marcas {
@@ -380,6 +384,7 @@ td.categorias {
     height: 10rem;
     width: 10rem;
     border-radius: 0% !important;
+    cursor: pointer;
 }
 
 .card-body.categorias {
@@ -405,7 +410,46 @@ td.categorias:hover>.card.categorias>.card-body.categorias>.card-text.categorias
 
 /* #endregion */
 
+/* #region  tu historial */
 
+.col.tuhistorial{
+    padding: 0%;
+}
+.tuhistorial.card{
+    height: 13rem;
+    width: 9.5rem;
+    padding: 0%;
+    padding: 0%;
+    background-color: transparent !important;
+    border: transparent !important;
+}
+.card-img-top.tuhistorial{
+    align-self: center;
+    width: 100% !important;
+    height: auto !important;
+}
+.card-body.tuhistorial{
+    padding: 0%;
+    background-color: transparent;
+    color: transparent !important;
+    
+}
+.tuhistorial.card:hover > .card-body.tuhistorial{
+    background-color: white;
+    color: black !important;
+}
+.carousel-control-prev.secciones.tushitorial {
+    width: 32px;
+    margin-left: 18rem;
+}
+
+.carousel-control-next.secciones.tuhistorial {
+    width: 32px;
+    margin-right: 7rem;
+}
+
+
+/* #endregion */
 
 /* #region  Media queries */
 
@@ -519,10 +563,7 @@ td.categorias:hover>.card.categorias>.card-body.categorias>.card-text.categorias
 
     }
 
-    .dobleCard:hover,
-    .card.marcas:hover {
-        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.20), 0 2px 3px 0 rgba(0, 0, 0, 0.20);
-    }
+  
 
     .card.marcas {
         width: 19rem;
@@ -535,7 +576,7 @@ td.categorias:hover>.card.categorias>.card-body.categorias>.card-text.categorias
         width: 32px;
         margin-left: 18rem;
     }
-    
+
     .carousel-control-next.secciones.categorias {
         width: 32px;
         margin-right: 19rem;
@@ -545,13 +586,22 @@ td.categorias:hover>.card.categorias>.card-body.categorias>.card-text.categorias
         width: 32px;
         margin-left: 18rem;
     }
-    
+
     .carousel-control-next.secciones.marcas {
         width: 32px;
         margin-right: 19rem;
     }
-   
-    .table-responsive.categorias{
+    .carousel-control-prev.secciones.tushitorial {
+        width: 32px;
+        margin-left: 18rem;
+    }
+
+    .carousel-control-next.secciones.tuhistorial {
+        width: 32px;
+        margin-right: 20rem;
+    }
+
+    .table-responsive.categorias {
         margin-left: 5rem;
     }
 }
