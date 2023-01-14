@@ -5,7 +5,8 @@ body {
 }
 
 .dobleCard:hover,
-.card.marcas:hover, .tuhistorial.card:hover {
+.card.marcas:hover,
+.tuhistorial.card:hover {
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.20), 0 2px 3px 0 rgba(0, 0, 0, 0.20);
 }
 
@@ -412,10 +413,11 @@ td.categorias:hover>.card.categorias>.card-body.categorias>.card-text.categorias
 
 /* #region  tu historial */
 
-.col.tuhistorial{
+.col.tuhistorial {
     padding: 0%;
 }
-.tuhistorial.card{
+
+.tuhistorial.card {
     height: 13rem;
     width: 9.5rem;
     padding: 0%;
@@ -423,21 +425,25 @@ td.categorias:hover>.card.categorias>.card-body.categorias>.card-text.categorias
     background-color: transparent !important;
     border: transparent !important;
 }
-.card-img-top.tuhistorial{
+
+.card-img-top.tuhistorial {
     align-self: center;
     width: 100% !important;
     height: auto !important;
 }
-.card-body.tuhistorial{
+
+.card-body.tuhistorial {
     padding: 0%;
     background-color: transparent;
     color: transparent !important;
-    
+
 }
-.tuhistorial.card:hover > .card-body.tuhistorial{
+
+.tuhistorial.card:hover>.card-body.tuhistorial {
     background-color: white;
     color: black !important;
 }
+
 .carousel-control-prev.secciones.tushitorial {
     width: 32px;
     margin-left: 18rem;
@@ -448,6 +454,49 @@ td.categorias:hover>.card.categorias>.card-body.categorias>.card-text.categorias
     margin-right: 7rem;
 }
 
+.container-fluid.informacion {
+    background-color: white;
+}
+
+
+/* #endregion */
+
+/* #region  informacion */
+.card.informacion{
+    height: 16rem;
+    width: 22rem;
+    align-items: center;
+    vertical-align: middle;
+    padding-top: 2rem;
+    width: 100%;
+    border: 0px;
+}
+.card-body.informacion{
+    padding: 0%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin:0rem 1rem 0rem 1rem;
+}
+.card-img-top.informacion{
+    height: 4rem !important;
+    width: 4rem !important;
+}
+.col.informacion{
+    margin: 0%;
+    padding: 0%;
+}
+.card-link.informacion{
+    text-decoration: none;
+}
+.separadorinfo{
+    width: 1px !important;
+    background-color: rgba(205, 218, 213, 0.603) !important;
+    height: 5rem !important;
+    vertical-align: middle !important;
+    display: inline;
+    margin-top: 5rem;
+
+}
 
 /* #endregion */
 
@@ -563,7 +612,7 @@ td.categorias:hover>.card.categorias>.card-body.categorias>.card-text.categorias
 
     }
 
-  
+
 
     .card.marcas {
         width: 19rem;
@@ -591,6 +640,7 @@ td.categorias:hover>.card.categorias>.card-body.categorias>.card-text.categorias
         width: 32px;
         margin-right: 19rem;
     }
+
     .carousel-control-prev.secciones.tushitorial {
         width: 32px;
         margin-left: 18rem;
