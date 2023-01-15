@@ -82,7 +82,7 @@
                             <a class="nav-link navreducido opcionesUsuario" href="#" aria-label="...">Mis compras</a>
                         </li>
 
-                        <li class="nav-item dropdown ">
+                        <li class="nav-item dropdown miscompras ">
                             <a class="nav-link navreducido opcionesUsuario dropdown-toggle " data-bs-toggle="dropdown"
                                 href="#" aria-label="..." role="button" aria-expanded="false">Favoritos</a>
                             <ul class="dropdown-menu favoritos">
@@ -107,31 +107,34 @@
                             </ul>
                         </li>
                         </li>
-                        <li class="nav-item">
-                        <li class="nav-item dropdown ">
+
+                        <li class="nav-item dropdown miscompras ">
                             <a class="nav-link navreducido opcionesUsuario" data-bs-toggle="dropdown" href="#"
                                 aria-label="..." role="button" aria-expanded="false"><i
                                     class="fa-solid fa-bell"></i></a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu miscompras" size="2">
                                 <li><a class="dropdown-item notificaciones" href="#" aria-label="...">
                                         <div class="card notificaciones">
                                             <div class="row">
-                                                <div class="card-body notificaciones">
-                                                    <table class="table table-borderless">
-                                                        <th></th>
-                                                        <th>
-                                                            <p class="card-title text-center">Comoda super comoda</p>
-                                                        </th>
-                                                        <th></th>
-                                                        <tr>
-                                                            <td><img src="img/comoda_compra.png" width="50" height="50"
-                                                                    alt="comoda"></td>
-                                                            <td>
-                                                                <p class="card-text">Comenta sobre tu compra.</p>
-                                                            </td>
-                                                            <td><a href="#" aria-label="...">Comentar</a> </td>
-                                                        </tr>
-                                                    </table>
+                                                <div class="col miscompras">
+                                                    <div class="card-body notificaciones">
+                                                        <table class="table table-borderless">
+                                                            <th></th>
+                                                            <th>
+                                                                <p class="card-title text-center">Comoda super comoda
+                                                                </p>
+                                                            </th>
+                                                            <th></th>
+                                                            <tr>
+                                                                <td class="miscompras"><img src="img/comoda_compra.png"
+                                                                        width="50" height="50" alt="comoda"></td>
+                                                                <td>
+                                                                    <p class="card-text">Comenta sobre tu compra.</p>
+                                                                </td>
+                                                                <td><a href="#" aria-label="...">Comentar</a> </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -148,8 +151,8 @@
                                                     </th>
                                                     <th></th>
                                                     <tr>
-                                                        <td><img src="img/canilla_compra.png" width="50" height="50"
-                                                                alt="canilla"></td>
+                                                        <td class="miscompras"><img src="img/canilla_compra.png"
+                                                                width="50" height="50" alt="canilla"></td>
                                                         <td>
                                                             <p class="card-text">Tu canilla esta en camino</p>
                                                         </td>
@@ -171,8 +174,8 @@
                                                         </th>
                                                         <th></th>
                                                         <tr>
-                                                            <td><img src="img/tolla_compra.png" width="50" height="50"
-                                                                    alt="comoda"></td>
+                                                            <td class="miscompras"><img src="img/tolla_compra.png"
+                                                                    width="50" height="50" alt="comoda"></td>
                                                             <td>
                                                                 <p class="card-text">Completa tu compra</p>
                                                             </td>
@@ -183,6 +186,8 @@
                                             </div>
                                         </div>
                                     </a></li>
+
+
                             </ul>
 
                         <li class="nav-item">
@@ -358,16 +363,11 @@
     <!-- #endregion -->
 
     <!-- #region ultima visita -->
-    <div class="container mt-5 ">
-        <div class="row gx-0">
-            <div class="col-4 ">
-                <h3 class="text-start historial">Basado en tu última visita</h3>
-            </div>
-            <div class="col-2">
-                <a href="#" class="text-decoration-none" aria-label="historial">
-                    <p class="px-0 text-start historial">Ver historial</p>
-                </a>
-            </div>
+    <div class="container mt-5 titulossecciones ">
+        <div class="row gx-0 titulossecciones">
+            <h3 class="text-start titulossecciones">Basado en tu última visita
+                <a href="#" class="text-decoration-none titulossecciones" aria-label="historial">Ver historial </a>
+            </h3>
         </div>
     </div>
 
@@ -699,18 +699,14 @@
     <!-- #endregion -->
 
     <!-- #region rubros -->
-    <div class="container mt-5 mb-2">
-        <div class="row gx-0">
-            <div class="col-6">
-                <h3 class="text-star historial">Relacionado con tus visitas a un rubro X</h3>
-            </div>
-            <div class="col-6">
-                <a href="#" class="text-decoration-none" aria-label="historial">
-                    <p class="text-start rubro">Ver historial</p>
-                </a>
-            </div>
+    <div class="container mt-5 titulossecciones ">
+        <div class="row gx-0 titulossecciones">
+            <h3 class="text-start titulossecciones">Relacionado con tus visitas al rubro Automotores
+                <a href="#" class="text-decoration-none titulossecciones" aria-label="historial">Ver historial </a>
+            </h3>
         </div>
     </div>
+
     <div id="CarouselRubros" class="carousel carousel-dark slide" data-bs-ride="carousel">
 
         <div class="carousel-inner">
@@ -1038,16 +1034,11 @@
     <!-- #endregion -->
 
     <!-- #region ofertas -->
-    <div class="container mt-5 mb-2">
-        <div class="row gx-0">
-            <div class="col-1">
-                <h3 class="text-star historial">Ofertas</h3>
-            </div>
-            <div class="col-11">
-                <a href="#" class="text-decoration-none" aria-label="historial">
-                    <p class="text-start ofertas">Ver todas</p>
-                </a>
-            </div>
+    <div class="container mt-5 titulossecciones ">
+        <div class="row gx-0 titulossecciones">
+            <h3 class="text-start titulossecciones">Ofertas
+                <a href="#" class="text-decoration-none titulossecciones" aria-label="historial">Ver historial </a>
+            </h3>
         </div>
     </div>
     <div id="CarouselOfertas" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -1407,12 +1398,14 @@
                             <div class=" card suscripcion mb-3">
                                 <div class="row g-0">
                                     <div class="col-md-4">
-                                        <img src="img/logodisney.svg" class="img-fluid rounded-start suscripcion "
+
+                                        <img src="img/logodisney.svg" class="img-fluid rounded-circle suscripcion "
                                             alt="...">
+
                                     </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h6 class="card-title suscripcion">Disney+ sin cargo</h6>
+                                    <div class="col-md-8 suscripcion">
+                                        <div class="card-body suscripcion">
+                                            <h6 class="card-title suscripcion corta">Disney+ sin cargo</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -1423,11 +1416,11 @@
                             <div class="card suscripcion mb-3">
                                 <div class="row g-0">
                                     <div class="col-md-4">
-                                        <img src="img/logostar+.svg" class="img-fluid rounded-start suscripcion "
+                                        <img src="img/logostar+.svg" class="img-fluid rounded-circle suscripcion "
                                             alt="...">
                                     </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
+                                    <div class="col-md-8 suscripcion">
+                                        <div class="card-body suscripcion">
                                             <h6 class="card-title suscripcion">Star+ sin cargo</h6>
                                         </div>
                                     </div>
@@ -1438,11 +1431,11 @@
                             <div class="card suscripcion mb-3">
                                 <div class="row g-0">
                                     <div class="col-md-4">
-                                        <img src="img/logoenvio.png" class="img-fluid rounded-start suscripcion"
+                                        <img src="img/logoenvio.png" class="img-fluid rounded-circle suscripcion"
                                             alt="...">
                                     </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
+                                    <div class="col-md-8 suscripcion">
+                                        <div class=" card-body suscripcion envio">
                                             <h6 class="card-title suscripcion">Envíos gratis y rápidos desde $ 5.500 y
                                                 45% OFF en
                                                 envíos de menos de $ 5.500</h6>
@@ -1468,16 +1461,13 @@
     <!-- #endregion -->
 
     <!-- #region Beneficios -->
-    <div class="container mt-5">
-        <div class="row gx-0">
-            <div class="col-5">
-                <h3 class="text-start historial">Beneficios de Mercado Puntos</h3>
-            </div>
-            <div class="col-2">
-                <a href="#" class="text-decoration-none" aria-label="historial">
-                    <p class="px-0 text-start beneficios">Ver todos los beneficios</p>
-                </a>
-            </div>
+
+    <div class="container mt-5 titulossecciones ">
+        <div class="row gx-0 titulossecciones">
+            <h3 class="text-start titulossecciones">Beneficios de Mercado Puntos
+                <a href="#" class="text-decoration-none titulossecciones" aria-label="historial">Ver todos los
+                    beneficios </a>
+            </h3>
         </div>
     </div>
     <div class="container mt-3 mb-5">
@@ -1589,27 +1579,22 @@
     <!-- #endregion -->
 
     <!-- #region rubros 2 -->
-    <div class="container mt-1">
-        <div class="row gx-0">
-            <div class="col-6">
-                <h3 class="text-star historial">Relacionado con tus visitas a un rubro Y</h3>
-            </div>
-            <div class="col-6">
-                <a href="#" class="text-decoration-none" aria-label="historial">
-                    <p class="text-start rubro">Ver historial</p>
-                </a>
-            </div>
+    <div class="container mt-5 titulossecciones ">
+        <div class="row gx-0 titulossecciones">
+            <h3 class="text-start titulossecciones">Relacionado con tus visitas al rubro Sillas
+                <a href="#" class="text-decoration-none titulossecciones" aria-label="historial">Ver historial </a>
+            </h3>
         </div>
     </div>
     <div id="CarouselRubros2" class="carousel carousel-dark slide" data-bs-ride="carousel">
 
         <div class="carousel-inner">
-            <!-- #region primer item rubros -->
+            <!-- #region primer item umavisita -->
             <div class="carousel-item active" data-bs-interval="10000">
                 <div class=" ultimavisita container">
                     <div class="row align-items-center ms-1">
                         <div class=" ultimavisita card ms-1">
-                            <img src="img/rub-001.png" class="card-img-top" alt="...">
+                            <img src="img/um-001.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-7 ultimavisitaprecio">
@@ -1628,7 +1613,7 @@
                             </div>
                         </div>
                         <div class="ultimavisita card ms-2">
-                            <img src="img/rub-002.png" class="card-img-top" alt="...">
+                            <img src="img/um-002.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-7 ultimavisitaprecio">
@@ -1647,7 +1632,7 @@
                             </div>
                         </div>
                         <div class="ultimavisita card ms-2">
-                            <img src="img/rub-003.png" class="card-img-top" alt="...">
+                            <img src="img/um-003.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-7 ultimavisitaprecio">
@@ -1666,7 +1651,7 @@
                             </div>
                         </div>
                         <div class="ultimavisita card ms-2">
-                            <img src="img/rub-004.png" class="card-img-top" alt="...">
+                            <img src="img/um-004.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-7 ultimavisitaprecio">
@@ -1685,7 +1670,7 @@
                             </div>
                         </div>
                         <div class="ultimavisita card ms-2">
-                            <img src="img/rub-005.png" class="card-img-top" alt="...">
+                            <img src="img/um-005.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-7 ultimavisitaprecio">
@@ -1707,12 +1692,12 @@
                 </div>
             </div>
             <!-- #endregion -->
-            <!-- #region segundo item rubros -->
+            <!-- #region segundo item umavisita-->
             <div class="carousel-item" data-bs-interval="20000">
                 <div class=" ultimavisita container">
                     <div class="row align-items-center ms-1">
                         <div class=" ultimavisita card ms-1">
-                            <img src="img/rub-006.png" class="card-img-top" alt="...">
+                            <img src="img/um-006.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-7 ultimavisitaprecio">
@@ -1731,7 +1716,7 @@
                             </div>
                         </div>
                         <div class="ultimavisita card ms-2">
-                            <img src="img/rub-007.png" class="card-img-top" alt="...">
+                            <img src="img/um-007.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-7 ultimavisitaprecio">
@@ -1750,7 +1735,7 @@
                             </div>
                         </div>
                         <div class="ultimavisita card ms-2">
-                            <img src="img/rub-008.png" class="card-img-top" alt="...">
+                            <img src="img/um-008.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-7 ultimavisitaprecio">
@@ -1769,7 +1754,7 @@
                             </div>
                         </div>
                         <div class="ultimavisita card ms-2">
-                            <img src="img/rub-009.png" class="card-img-top" alt="...">
+                            <img src="img/um-009.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-7 ultimavisitaprecio">
@@ -1788,7 +1773,7 @@
                             </div>
                         </div>
                         <div class="ultimavisita card ms-2">
-                            <img src="img/rub-010.png" class="card-img-top" alt="...">
+                            <img src="img/um-010.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-7 ultimavisitaprecio">
@@ -1810,12 +1795,12 @@
                 </div>
             </div>
             <!-- #endregion -->
-            <!-- #region tercer item rubros -->
+            <!-- #region tercer item umavisita-->
             <div class="carousel-item">
                 <div class=" ultimavisita container">
                     <div class="row align-items-center ms-1">
                         <div class=" ultimavisita card ms-1">
-                            <img src="img/rub-011.png" class="card-img-top" alt="...">
+                            <img src="img/um-011.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-7 ultimavisitaprecio">
@@ -1834,7 +1819,7 @@
                             </div>
                         </div>
                         <div class="ultimavisita card ms-2">
-                            <img src="img/rub-012.png" class="card-img-top" alt="...">
+                            <img src="img/um-012.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-7 ultimavisitaprecio">
@@ -1853,7 +1838,7 @@
                             </div>
                         </div>
                         <div class="ultimavisita card ms-2">
-                            <img src="img/rub-013.png" class="card-img-top" alt="...">
+                            <img src="img/um-013.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-7 ultimavisitaprecio">
@@ -1872,7 +1857,7 @@
                             </div>
                         </div>
                         <div class="ultimavisita card ms-2">
-                            <img src="img/rub-014.png" class="card-img-top" alt="...">
+                            <img src="img/um-014.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-7 ultimavisitaprecio">
@@ -1891,7 +1876,7 @@
                             </div>
                         </div>
                         <div class="ultimavisita card ms-2">
-                            <img src="img/rub-015.png" class="card-img-top" alt="...">
+                            <img src="img/um-015.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-7 ultimavisitaprecio">
@@ -1927,17 +1912,12 @@
     </div>
     <!-- #endregion -->
 
-    <!-- #region Cuatro Card -->
-    <div class="container mt-5">
-        <div class="row gx-0">
-            <div class="col-6">
-                <h3 class="text-star historial">Las mejores marcas te esperan</h3>
-            </div>
-            <div class="col-6">
-                <a href="#" class="text-decoration-none" aria-label="historial">
-                    <p class="text-start rubro">Ver historial</p>
-                </a>
-            </div>
+    <!-- #region Cuatro Cards -->
+    <div class="container mt-5 titulossecciones ">
+        <div class="row gx-0 titulossecciones">
+            <h3 class="text-start titulossecciones">Las mejores marcas te esperan
+                <a href="#" class="text-decoration-none titulossecciones" aria-label="historial">Ver historial </a>
+            </h3>
         </div>
     </div>
     <div id="CarouselMarcas" class="carousel carousel-dark slide mt-2" data-bs-ride="carousel">
@@ -1954,13 +1934,13 @@
                                     <h5 class="card-title">Adidas</h5>
                                     <div class="row">
                                         <div class="col">
-                                            <img src="img/of-001.png" class="img-fluid" alt="...">
+                                            <img src="img/of-001.png" class="img-fluid rounded-circle" alt="...">
                                         </div>
                                         <div class="col">
-                                            <img src="img/of-002.png" class="img-fluid" alt="...">
+                                            <img src="img/of-002.png" class="img-fluid rounded-circle" alt="...">
                                         </div>
                                         <div class="col">
-                                            <img src="img/of-003.png" class="img-fluid" alt="...">
+                                            <img src="img/of-003.png" class="img-fluid rounded-circle" alt="...">
                                         </div>
                                     </div>
                                 </div>
@@ -1974,13 +1954,13 @@
                                     <h5 class="card-title">Rex</h5>
                                     <div class="row">
                                         <div class="col">
-                                            <img src="img/of-004.png" class="img-fluid" alt="...">
+                                            <img src="img/of-004.png" class="img-fluid rounded-circle" alt="...">
                                         </div>
                                         <div class="col">
-                                            <img src="img/of-005.png" class="img-fluid" alt="...">
+                                            <img src="img/of-005.png" class="img-fluid rounded-circle" alt="...">
                                         </div>
                                         <div class="col">
-                                            <img src="img/of-006.png" class="img-fluid" alt="...">
+                                            <img src="img/of-006.png" class="img-fluid rounded-circle" alt="...">
                                         </div>
                                     </div>
                                 </div>
@@ -1994,13 +1974,13 @@
                                     <h5 class="card-title">Samsung</h5>
                                     <div class="row">
                                         <div class="col">
-                                            <img src="img/of-007.png" class="img-fluid" alt="...">
+                                            <img src="img/of-007.png" class="img-fluid rounded-circle" alt="...">
                                         </div>
                                         <div class="col">
-                                            <img src="img/of-008.png" class="img-fluid" alt="...">
+                                            <img src="img/of-008.png" class="img-fluid rounded-circle" alt="...">
                                         </div>
                                         <div class="col">
-                                            <img src="img/of-009.png" class="img-fluid" alt="...">
+                                            <img src="img/of-009.png" class="img-fluid rounded-circle" alt="...">
                                         </div>
                                     </div>
                                 </div>
@@ -2014,13 +1994,13 @@
                                     <h5 class="card-title">Randers</h5>
                                     <div class="row">
                                         <div class="col">
-                                            <img src="img/of-010.png" class="img-fluid" alt="...">
+                                            <img src="img/of-010.png" class="img-fluid rounded-circle" alt="...">
                                         </div>
                                         <div class="col">
-                                            <img src="img/of-011.png" class="img-fluid" alt="...">
+                                            <img src="img/of-011.png" class="img-fluid rounded-circle" alt="...">
                                         </div>
                                         <div class="col">
-                                            <img src="img/of-012.png" class="img-fluid" alt="...">
+                                            <img src="img/of-012.png" class="img-fluid rounded-circle" alt="...">
                                         </div>
                                     </div>
                                 </div>
@@ -2044,13 +2024,13 @@
                                     <h5 class="card-title">Peugeot</h5>
                                     <div class="row">
                                         <div class="col">
-                                            <img src="img/um-001.png" class="img-fluid" alt="...">
+                                            <img src="img/um-001.png" class="img-fluid rounded-circle" alt="...">
                                         </div>
                                         <div class="col">
-                                            <img src="img/um-002.png" class="img-fluid" alt="...">
+                                            <img src="img/um-002.png" class="img-fluid rounded-circle" alt="...">
                                         </div>
                                         <div class="col">
-                                            <img src="img/um-003.png" class="img-fluid" alt="...">
+                                            <img src="img/um-003.png" class="img-fluid rounded-circle" alt="...">
                                         </div>
                                     </div>
                                 </div>
@@ -2064,13 +2044,13 @@
                                     <h5 class="card-title">Citroen</h5>
                                     <div class="row">
                                         <div class="col">
-                                            <img src="img/um-004.png" class="img-fluid" alt="...">
+                                            <img src="img/um-004.png" class="img-fluid rounded-circle" alt="...">
                                         </div>
                                         <div class="col">
-                                            <img src="img/um-005.png" class="img-fluid" alt="...">
+                                            <img src="img/um-005.png" class="img-fluid rounded-circle" alt="...">
                                         </div>
                                         <div class="col">
-                                            <img src="img/um-006.png" class="img-fluid" alt="...">
+                                            <img src="img/um-006.png" class="img-fluid rounded-circle" alt="...">
                                         </div>
                                     </div>
                                 </div>
@@ -2084,13 +2064,13 @@
                                     <h5 class="card-title">Whilpool</h5>
                                     <div class="row">
                                         <div class="col">
-                                            <img src="img/um-007.png" class="img-fluid" alt="...">
+                                            <img src="img/um-007.png" class="img-fluid rounded-circle" alt="...">
                                         </div>
                                         <div class="col">
-                                            <img src="img/um-008.png" class="img-fluid" alt="...">
+                                            <img src="img/um-008.png" class="img-fluid rounded-circle" alt="...">
                                         </div>
                                         <div class="col">
-                                            <img src="img/um-009.png" class="img-fluid" alt="...">
+                                            <img src="img/um-009.png" class="img-fluid rounded-circle" alt="...">
                                         </div>
                                     </div>
                                 </div>
@@ -2104,13 +2084,13 @@
                                     <h5 class="card-title">Lego</h5>
                                     <div class="row">
                                         <div class="col">
-                                            <img src="img/um-010.png" class="img-fluid" alt="...">
+                                            <img src="img/um-010.png" class="img-fluid rounded-circle" alt="...">
                                         </div>
                                         <div class="col">
-                                            <img src="img/um-011.png" class="img-fluid" alt="...">
+                                            <img src="img/um-011.png" class="img-fluid rounded-circle" alt="...">
                                         </div>
                                         <div class="col">
-                                            <img src="img/um-012.png" class="img-fluid" alt="...">
+                                            <img src="img/um-012.png" class="img-fluid rounded-circle" alt="...">
                                         </div>
                                     </div>
                                 </div>
@@ -2315,18 +2295,14 @@
     <!-- #endregion -->
 
     <!-- #region Tambien puede interesarte -->
-    <div class="container mt-5">
-        <div class="row gx-0">
-            <div class="col-6">
-                <h3 class="text-star historial">Tambien puede interesarte</h3>
-            </div>
-            <div class="col-6">
-                <a href="#" class="text-decoration-none" aria-label="historial">
-                    <p class="text-start rubro">Ver historial</p>
-                </a>
-            </div>
+    <div class="container mt-5 titulossecciones ">
+        <div class="row gx-0 titulossecciones">
+            <h3 class="text-start titulossecciones">Tambien puede interesarte
+                <a href="#" class="text-decoration-none titulossecciones" aria-label="historial">Ver historial </a>
+            </h3>
         </div>
     </div>
+
     <div id="CarouselInteresarte" class="carousel carousel-dark slide mt-2" data-bs-ride="carousel">
 
         <div class="carousel-inner">
@@ -2654,27 +2630,22 @@
     <!-- #endregion -->
 
     <!-- #region rubros 3 -->
-    <div class="container mt-3">
-        <div class="row gx-0">
-            <div class="col-6">
-                <h3 class="text-star historial">Relacinado con tu compra en el rubro Z</h3>
-            </div>
-            <div class="col-6">
-                <a href="#" class="text-decoration-none" aria-label="historial">
-                    <p class="text-start rubro">Ver historial</p>
-                </a>
-            </div>
+    <div class="container mt-5 titulossecciones ">
+        <div class="row gx-0 titulossecciones">
+            <h3 class="text-start titulossecciones">Relacionados con tus compras en el rubro Supermercado
+                <a href="#" class="text-decoration-none titulossecciones" aria-label="historial">Ver historial </a>
+            </h3>
         </div>
     </div>
     <div id="CarouselRubros3" class="carousel carousel-dark slide mt-2" data-bs-ride="carousel">
 
         <div class="carousel-inner">
-            <!-- #region primer item rubros -->
+            <!-- #region primer item ofertas -->
             <div class="carousel-item active" data-bs-interval="10000">
                 <div class=" ultimavisita container">
                     <div class="row align-items-center ms-1">
                         <div class=" ultimavisita card ms-1">
-                            <img src="img/rub-001.png" class="card-img-top" alt="...">
+                            <img src="img/of-001.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-7 ultimavisitaprecio">
@@ -2693,7 +2664,7 @@
                             </div>
                         </div>
                         <div class="ultimavisita card ms-2">
-                            <img src="img/rub-002.png" class="card-img-top" alt="...">
+                            <img src="img/of-002.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-7 ultimavisitaprecio">
@@ -2712,7 +2683,7 @@
                             </div>
                         </div>
                         <div class="ultimavisita card ms-2">
-                            <img src="img/rub-003.png" class="card-img-top" alt="...">
+                            <img src="img/of-003.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-7 ultimavisitaprecio">
@@ -2731,7 +2702,7 @@
                             </div>
                         </div>
                         <div class="ultimavisita card ms-2">
-                            <img src="img/rub-004.png" class="card-img-top" alt="...">
+                            <img src="img/of-004.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-7 ultimavisitaprecio">
@@ -2750,7 +2721,7 @@
                             </div>
                         </div>
                         <div class="ultimavisita card ms-2">
-                            <img src="img/rub-005.png" class="card-img-top" alt="...">
+                            <img src="img/of-005.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-7 ultimavisitaprecio">
@@ -2772,12 +2743,12 @@
                 </div>
             </div>
             <!-- #endregion -->
-            <!-- #region segundo item rubros -->
+            <!-- #region segundo item ofertas -->
             <div class="carousel-item" data-bs-interval="20000">
                 <div class=" ultimavisita container">
                     <div class="row align-items-center ms-1">
                         <div class=" ultimavisita card ms-1">
-                            <img src="img/rub-006.png" class="card-img-top" alt="...">
+                            <img src="img/of-006.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-7 ultimavisitaprecio">
@@ -2796,7 +2767,7 @@
                             </div>
                         </div>
                         <div class="ultimavisita card ms-2">
-                            <img src="img/rub-007.png" class="card-img-top" alt="...">
+                            <img src="img/of-007.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-7 ultimavisitaprecio">
@@ -2815,7 +2786,7 @@
                             </div>
                         </div>
                         <div class="ultimavisita card ms-2">
-                            <img src="img/rub-008.png" class="card-img-top" alt="...">
+                            <img src="img/of-008.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-7 ultimavisitaprecio">
@@ -2834,7 +2805,7 @@
                             </div>
                         </div>
                         <div class="ultimavisita card ms-2">
-                            <img src="img/rub-009.png" class="card-img-top" alt="...">
+                            <img src="img/of-009.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-7 ultimavisitaprecio">
@@ -2853,7 +2824,7 @@
                             </div>
                         </div>
                         <div class="ultimavisita card ms-2">
-                            <img src="img/rub-010.png" class="card-img-top" alt="...">
+                            <img src="img/of-010.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-7 ultimavisitaprecio">
@@ -2875,12 +2846,12 @@
                 </div>
             </div>
             <!-- #endregion -->
-            <!-- #region tercer item rubros -->
+            <!-- #region tercer item ofertas -->
             <div class="carousel-item">
                 <div class=" ultimavisita container">
                     <div class="row align-items-center ms-1">
                         <div class=" ultimavisita card ms-1">
-                            <img src="img/rub-011.png" class="card-img-top" alt="...">
+                            <img src="img/of-011.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-7 ultimavisitaprecio">
@@ -2899,7 +2870,7 @@
                             </div>
                         </div>
                         <div class="ultimavisita card ms-2">
-                            <img src="img/rub-012.png" class="card-img-top" alt="...">
+                            <img src="img/of-012.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-7 ultimavisitaprecio">
@@ -2918,7 +2889,7 @@
                             </div>
                         </div>
                         <div class="ultimavisita card ms-2">
-                            <img src="img/rub-013.png" class="card-img-top" alt="...">
+                            <img src="img/of-013.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-7 ultimavisitaprecio">
@@ -2937,7 +2908,7 @@
                             </div>
                         </div>
                         <div class="ultimavisita card ms-2">
-                            <img src="img/rub-014.png" class="card-img-top" alt="...">
+                            <img src="img/of-014.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-7 ultimavisitaprecio">
@@ -2956,7 +2927,7 @@
                             </div>
                         </div>
                         <div class="ultimavisita card ms-2">
-                            <img src="img/rub-015.png" class="card-img-top" alt="...">
+                            <img src="img/of-015.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-7 ultimavisitaprecio">
@@ -3043,16 +3014,11 @@
     <!-- #endregion -->
 
     <!-- #region Mas vendidos -->
-    <div class="container mt-5">
-        <div class="row gx-0">
-            <div class="col-6">
-                <h3 class="text-star historial">Mas vendidos</h3>
-            </div>
-            <div class="col-6">
-                <a href="#" class="text-decoration-none" aria-label="historial">
-                    <p class="text-start rubro">Ver historial</p>
-                </a>
-            </div>
+    <div class="container mt-5 titulossecciones ">
+        <div class="row gx-0 titulossecciones">
+            <h3 class="text-start titulossecciones">Mas vendidos
+                <a href="#" class="text-decoration-none titulossecciones" aria-label="historial">Ver historial </a>
+            </h3>
         </div>
     </div>
     <div id="CarouselMasVendidos" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -3382,16 +3348,11 @@
     <!-- #endregion -->
 
     <!-- #region Categorias  -->
-    <div class="container mt-5 categorias">
-        <div class="row gx-0">
-            <div class="col-6">
-                <h3 class="text-star historial">Categorias mas populares</h3>
-            </div>
-            <div class="col-6">
-                <a href="#" class="text-decoration-none" aria-label="historial">
-                    <p class="text-start rubro"></p>
-                </a>
-            </div>
+    <div class="container mt-5 titulossecciones ">
+        <div class="row gx-0 titulossecciones">
+            <h3 class="text-start titulossecciones">Categorias populares
+                
+            </h3>
         </div>
     </div>
 
@@ -3843,16 +3804,11 @@
     <!-- #endregion -->
 
     <!-- #region Tu historial -->
-    <div class="container mt-5">
-        <div class="row gx-0">
-            <div class="col-6">
-                <h3 class="text-star historial">Tu historial</h3>
-            </div>
-            <div class="col-6">
-                <a href="#" class="text-decoration-none" aria-label="historial">
-                    <p class="text-start rubro">Ver historial completo</p>
-                </a>
-            </div>
+    <div class="container mt-5 titulossecciones ">
+        <div class="row gx-0 titulossecciones">
+            <h3 class="text-start titulossecciones">Tu historial
+                <a href="#" class="text-decoration-none titulossecciones" aria-label="historial">Ver historial completo </a>
+            </h3>
         </div>
     </div>
     <div id="CarouselHistorial" class="carousel carousel-dark slide mt-2 mb-5" data-bs-ride="carousel">
@@ -4143,7 +4099,8 @@
                         <div class="card-body informacion">
                             <h5 class="card-title informacion">Envío gratis desde $ 5.500</h5>
 
-                            <p>Solo por estar registrado en Mercado Libre tenés envíos gratis en miles de productos. Es
+                            <p>Solo por estar registrado en Mercado Libre tenés envíos gratis en miles de productos.
+                                Es
                                 un beneficio de Mercado Puntos.</p>
                             <a href="#" class="card-link informacion">Conocé más sobre este beneficio</a>
                         </div>
@@ -4156,7 +4113,8 @@
                         <div class="card-body informacion">
                             <h5 class="card-title informacion">Seguridad, de principio a fin</h5>
 
-                            <p>¿No te gusta? ¡Devolvelo! En Mercado Libre, no hay nada que no puedas hacer, porque estás
+                            <p>¿No te gusta? ¡Devolvelo! En Mercado Libre, no hay nada que no puedas hacer, porque
+                                estás
                                 siempre protegido.</p>
                             <a href="#" class="card-link informacion">Cómo te protegemos</a>
                         </div>
@@ -4185,7 +4143,8 @@
 
                         <div class="card-body infolegal">
                             <h5 class="card-title infolegal">Conocé las normas que aplican cuando comprás</h5>
-                            <a href="#" class="card-link infolegal">Ver contratos de adhesión - Ley N° 24240 de Defensa
+                            <a href="#" class="card-link infolegal">Ver contratos de adhesión - Ley N° 24240 de
+                                Defensa
                                 del Consumidor</a>
                         </div>
                     </div>
@@ -4211,15 +4170,16 @@
     </div>
     </div>
     <!-- #endregion -->
+
     <!-- #region Navbar mas info  -->
     <div class="container-fluid navmasinfo boton">
-       
+
         <button class="navbar-toggler navmasinfo" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarMasInformacion" aria-controls="navbarsMasInformacion" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="align-items-center navmasinfo">Mas información</span>
         </button>
-    
+
     </div>
     <nav class="navbar navbar-light navmasinfo " aria-label="Navbar mas informacion">
         <div class="container-fluid navmasinfo">
@@ -4228,142 +4188,144 @@
             <div class="collapse navbar-collapse navmasinfo" id="navbarMasInformacion">
                 <div class="container-fluid navmasinfo">
                     <div class="row navmasinfo">
-                        
-                            <div class="col navmasinfo">
-                                <div class="card navmasinfo">
-                                    <ul class="list-group list-group-flush navmasinfo navmasinfo">
-                                        <li class="list-group-item navmasinfo">
-                                            <h5>Acerca de</h5>
-                                        </li>
-                                        <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
-                                                <p class="navmasinfo">Mercado Libre</p>
-                                            </a></li>
-                                        <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
-                                                <p class="navmasinfo">Investor relation</p>
-                                            </a></li>
-                                        <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
-                                                <p class="navmasinfo">Tendencias</p>
-                                            </a></li>
-                                        <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
-                                                <p class="navmasinfo">Sustentabilidad</p>
-                                            </a></li>
-                                    </ul>
-                                </div>
+
+                        <div class="col navmasinfo">
+                            <div class="card navmasinfo">
+                                <ul class="list-group list-group-flush navmasinfo navmasinfo">
+                                    <li class="list-group-item navmasinfo">
+                                        <h5>Acerca de</h5>
+                                    </li>
+                                    <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
+                                            <p class="navmasinfo">Mercado Libre</p>
+                                        </a></li>
+                                    <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
+                                            <p class="navmasinfo">Investor relation</p>
+                                        </a></li>
+                                    <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
+                                            <p class="navmasinfo">Tendencias</p>
+                                        </a></li>
+                                    <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
+                                            <p class="navmasinfo">Sustentabilidad</p>
+                                        </a></li>
+                                </ul>
                             </div>
-                            <div class="col navmasinfo">
-                                <div class="card navmasinfo">
-                                    <ul class="list-group list-group-flush navmasinfo">
-                                        <li class="list-group-item navmasinfo">
-                                            <h5>Otros sitios</h5>
-                                        </li>
-                                        <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
-                                                <p class="navmasinfo">Developers</p>
-                                            </a></li>
-                                        <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
-                                                <p class="navmasinfo">Mercado Pago</p>
-                                            </a></li>
-                                        <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
-                                                <p class="navmasinfo">Mercado Shops</p>
-                                            </a></li>
-                                        <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
-                                                <p class="navmasinfo">Mercado Envios</p>
-                                            </a></li>
-                                        <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
-                                                <p class="navmasinfo">Mercado Ads</p>
-                                            </a></li>
-                                    </ul>
-                                </div>
+                        </div>
+                        <div class="col navmasinfo">
+                            <div class="card navmasinfo">
+                                <ul class="list-group list-group-flush navmasinfo">
+                                    <li class="list-group-item navmasinfo">
+                                        <h5>Otros sitios</h5>
+                                    </li>
+                                    <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
+                                            <p class="navmasinfo">Developers</p>
+                                        </a></li>
+                                    <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
+                                            <p class="navmasinfo">Mercado Pago</p>
+                                        </a></li>
+                                    <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
+                                            <p class="navmasinfo">Mercado Shops</p>
+                                        </a></li>
+                                    <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
+                                            <p class="navmasinfo">Mercado Envios</p>
+                                        </a></li>
+                                    <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
+                                            <p class="navmasinfo">Mercado Ads</p>
+                                        </a></li>
+                                </ul>
                             </div>
-                            <div class="col navmasinfo">
-                                <div class="card navmasinfo">
-                                    <ul class="list-group list-group-flush navmasinfo">
-                                        <li class="list-group-item navmasinfo">
-                                            <h5>Ayuda</h5>
-                                        </li>
-                                        <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
-                                                <p class="navmasinfo">Comprar</p>
-                                            </a></li>
-                                        <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
-                                                <p class="navmasinfo">Vender</p>
-                                            </a></li>
-                                        <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
-                                                <p class="navmasinfo">Resolución de problemas</p>
-                                            </a></li>
-                                        <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
-                                                <p class="navmasinfo">Centro de seguridad</p>
-                                            </a></li>
-                                    </ul>
-                                </div>
+                        </div>
+                        <div class="col navmasinfo">
+                            <div class="card navmasinfo">
+                                <ul class="list-group list-group-flush navmasinfo">
+                                    <li class="list-group-item navmasinfo">
+                                        <h5>Ayuda</h5>
+                                    </li>
+                                    <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
+                                            <p class="navmasinfo">Comprar</p>
+                                        </a></li>
+                                    <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
+                                            <p class="navmasinfo">Vender</p>
+                                        </a></li>
+                                    <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
+                                            <p class="navmasinfo">Resolución de problemas</p>
+                                        </a></li>
+                                    <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
+                                            <p class="navmasinfo">Centro de seguridad</p>
+                                        </a></li>
+                                </ul>
                             </div>
-                        
-                            <div class="col navmasinfo">
-                                <div class="card navmasinfo">
-                                    <ul class="list-group list-group-flush navmasinfo">
-                                        <li class="list-group-item navmasinfo">
-                                            <h5>Redes sociales</h5>
-                                        </li>
-                                        <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
-                                                <p class="navmasinfo">Twitter</p>
-                                            </a></li>
-                                        <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
-                                                <p class="navmasinfo">Facebook</p>
-                                            </a></li>
-                                        <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
-                                                <p class="navmasinfo">Instagram</p>
-                                            </a></li>
-                                        <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
-                                                <p class="navmasinfo">Youtube</p>
-                                            </a></li>
-                                    </ul>
-                                </div>
+                        </div>
+
+                        <div class="col navmasinfo">
+                            <div class="card navmasinfo">
+                                <ul class="list-group list-group-flush navmasinfo">
+                                    <li class="list-group-item navmasinfo">
+                                        <h5>Redes sociales</h5>
+                                    </li>
+                                    <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
+                                            <p class="navmasinfo">Twitter</p>
+                                        </a></li>
+                                    <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
+                                            <p class="navmasinfo">Facebook</p>
+                                        </a></li>
+                                    <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
+                                            <p class="navmasinfo">Instagram</p>
+                                        </a></li>
+                                    <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
+                                            <p class="navmasinfo">Youtube</p>
+                                        </a></li>
+                                </ul>
                             </div>
-                            <div class="col navmasinfo">
-                                <div class="card navmasinfo">
-                                    <ul class="list-group list-group-flush navmasinfo">
-                                        <li class="list-group-item navmasinfo">
-                                            <h5>Mi cuenta</h5>
-                                        </li>
-                                        <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
-                                                <p class="navmasinfo">Resumen</p>
-                                            </a></li>
-                                        <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
-                                                <p class="navmasinfo">Favoritos</p>
-                                            </a></li>
-                                        <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
-                                                <p class="navmasinfo">Vender</p>
-                                            </a></li>
-                                    </ul>
-                                </div>
+                        </div>
+                        <div class="col navmasinfo">
+                            <div class="card navmasinfo">
+                                <ul class="list-group list-group-flush navmasinfo">
+                                    <li class="list-group-item navmasinfo">
+                                        <h5>Mi cuenta</h5>
+                                    </li>
+                                    <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
+                                            <p class="navmasinfo">Resumen</p>
+                                        </a></li>
+                                    <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
+                                            <p class="navmasinfo">Favoritos</p>
+                                        </a></li>
+                                    <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
+                                            <p class="navmasinfo">Vender</p>
+                                        </a></li>
+                                </ul>
                             </div>
-                            <div class="col navmasinfo">
-                                <div class="card navmasinfo">
-                                    <ul class="list-group list-group-flush navmasinfo">
-                                        <li class="list-group-item navmasinfo">
-                                            <h5>Mercado Puntos</h5>
-                                        </li>
-                                        <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
-                                                <p class="navmasinfo">Nivel 6</p>
-                                            </a></li>
-                                        <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
-                                                <p class="navmasinfo">Disney+</p>
-                                            </a></li>
-                                        <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
-                                                <p class="navmasinfo">HBO MAX</p>
-                                            </a></li>
-                                        <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
-                                                <p class="navmasinfo">Paramount</p>
-                                            </a></li>
-                                    </ul>
-                                </div>
+                        </div>
+                        <div class="col navmasinfo">
+                            <div class="card navmasinfo">
+                                <ul class="list-group list-group-flush navmasinfo">
+                                    <li class="list-group-item navmasinfo">
+                                        <h5>Mercado Puntos</h5>
+                                    </li>
+                                    <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
+                                            <p class="navmasinfo">Nivel 6</p>
+                                        </a></li>
+                                    <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
+                                            <p class="navmasinfo">Disney+</p>
+                                        </a></li>
+                                    <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
+                                            <p class="navmasinfo">HBO MAX</p>
+                                        </a></li>
+                                    <li class="list-group-item navmasinfo"><a href="#" class="navmasinfo">
+                                            <p class="navmasinfo">Paramount</p>
+                                        </a></li>
+                                </ul>
                             </div>
-                        
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </nav>
+    <!-- #endregion -->
 </body>
-<!-- #endregion -->
+
+
 <!-- #region Mas Informacion  -->
 
 <footer class="footer mt-auto py-3 bg-light masinfo">

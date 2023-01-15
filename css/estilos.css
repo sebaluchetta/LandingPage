@@ -4,6 +4,7 @@ body {
 
 }
 
+.ultimavisita.card:hover,
 .dobleCard:hover,
 .card.marcas:hover,
 .tuhistorial.card:hover {
@@ -42,6 +43,8 @@ body {
 .dropdown-divider.favoritos,
 .dropdown-item.notificaciones {
     margin-bottom: 0px !important;
+    padding: .1rem;
+    
 }
 
 p.favoritos {
@@ -51,8 +54,21 @@ p.favoritos {
 
 .card.notificaciones {
     border: transparent;
+    width: 100%;
 }
-
+.col.miscompras{
+    padding: 0%;
+    margin:0%
+}
+td.miscompras{
+    padding-left: 1rem;
+}
+.dropdown-menu.miscompras{
+    height: 300px;
+    width: auto;
+    overflow-y:auto;
+    overflow-x: hidden;
+}
 /* #endregion */
 
 /* #region  Primer Carousel */
@@ -147,13 +163,20 @@ tbody.mdp {
 /* #endregion */
 
 /* #region  Titulos */
-p.historial,
-p.rubro {
-    padding: 0px !important;
-    text-align: left !important;
-    margin-top: 10px !important;
-    margin-left: -55px !important;
+
+.row.titulossecciones{
+width: 100%;
 }
+ a.titulossecciones{
+    
+    font-size: smaller;
+    font-weight: 100;
+    padding-bottom: 1rem;
+}
+h3.titulossecciones{
+    font-weight: 150;
+}
+
 
 p.rubro {
     padding: 0px !important;
@@ -245,7 +268,7 @@ img.card-img-top {
 
 
 
-/* #region  Tabla suscripcion */
+/* #region  Tabla suscribite */
 .table.suscripcion {
     padding-top: 5rem !important;
 
@@ -306,21 +329,42 @@ img.card-img-top {
 
 .card.suscripcion {
     width: 100%;
-    height: 100%;
-    border: 0rem;
+    height: 100%;   
+    border: transparent;
+    align-items: center;
+    vertical-align: middle;
 
+}
+.card-body.suscripcion{
+    
+    margin-top: 1rem;
+    
+}
+.card-body.suscripcion.envio{
+    
+    margin: 0%;
+    
 }
 
 .card-title.suscripcion {
-    vertical-align: middle;
-    margin-top: 2rem;
+    
     font-weight: 400;
     text-align: left;
 }
+.col-md-8.suscripcion{
+    align-items: center;
+    vertical-align: middle;
+}
 
-.img-fluid.rounded-start.suscripcion {
-    border-color: black;
-    border-radius: 20px;
+.img-fluid.suscripcion{
+    width: 82px;
+    height: 82px;
+    border-color: #f7f7f7;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 1px; 
+
+    
 }
 
 .botonSuscribite {
