@@ -140,6 +140,11 @@ p.leyenda {
 
 td.mdp {
     padding: 0px;
+    align-items: center;
+    height: 100%;
+}
+.table-responsive.mdp{
+    height: 108px;
 }
 
 .card.mdp,
