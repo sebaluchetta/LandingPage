@@ -4,12 +4,15 @@ body {
 
 }
 
+/* #region  sombras para todos */
 .ultimavisita.card:hover,
 .dobleCard:hover,
 .card.marcas:hover,
 .tuhistorial.card:hover {
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.20), 0 2px 3px 0 rgba(0, 0, 0, 0.20);
 }
+
+/* #endregion */
 
 /* #region Encabezado  */
 
@@ -44,7 +47,7 @@ body {
 .dropdown-item.notificaciones {
     margin-bottom: 0px !important;
     padding: .1rem;
-    
+
 }
 
 p.favoritos {
@@ -56,19 +59,23 @@ p.favoritos {
     border: transparent;
     width: 100%;
 }
-.col.miscompras{
+
+.col.miscompras {
     padding: 0%;
-    margin:0%
+    margin: 0%
 }
-td.miscompras{
+
+td.miscompras {
     padding-left: 1rem;
 }
-.dropdown-menu.miscompras{
+
+.dropdown-menu.miscompras {
     height: 300px;
     width: auto;
-    overflow-y:auto;
+    overflow-y: auto;
     overflow-x: hidden;
 }
+
 /* #endregion */
 
 /* #region  Primer Carousel */
@@ -144,6 +151,10 @@ td.mdp {
 
 
 }
+.mdp.mas{
+    width: 8.56rem !important;
+    height: 3rem !important;
+}
 
 .container.mdp {
     border: 1px !important;
@@ -164,16 +175,18 @@ tbody.mdp {
 
 /* #region  Titulos */
 
-.row.titulossecciones{
-width: 100%;
+.row.titulossecciones {
+    width: 100%;
 }
- a.titulossecciones{
-    
+
+a.titulossecciones {
+
     font-size: smaller;
     font-weight: 100;
     padding-bottom: 1rem;
 }
-h3.titulossecciones{
+
+h3.titulossecciones {
     font-weight: 150;
 }
 
@@ -329,42 +342,45 @@ img.card-img-top {
 
 .card.suscripcion {
     width: 100%;
-    height: 100%;   
+    height: 100%;
     border: transparent;
     align-items: center;
     vertical-align: middle;
 
 }
-.card-body.suscripcion{
-    
+
+.card-body.suscripcion {
+
     margin-top: 1rem;
-    
+
 }
-.card-body.suscripcion.envio{
-    
+
+.card-body.suscripcion.envio {
+
     margin: 0%;
-    
+
 }
 
 .card-title.suscripcion {
-    
+
     font-weight: 400;
     text-align: left;
 }
-.col-md-8.suscripcion{
+
+.col-md-8.suscripcion {
     align-items: center;
     vertical-align: middle;
 }
 
-.img-fluid.suscripcion{
+.img-fluid.suscripcion {
     width: 82px;
     height: 82px;
     border-color: #f7f7f7;
     border-style: solid;
     border-radius: 50%;
-    border-width: 1px; 
+    border-width: 1px;
 
-    
+
 }
 
 .botonSuscribite {
@@ -506,7 +522,7 @@ td.categorias:hover>.card.categorias>.card-body.categorias>.card-text.categorias
 /* #endregion */
 
 /* #region  informacion */
-.card.informacion{
+.card.informacion {
     height: 16rem;
     width: 22rem;
     align-items: center;
@@ -515,24 +531,30 @@ td.categorias:hover>.card.categorias>.card-body.categorias>.card-text.categorias
     width: 100%;
     border: 0px;
 }
-.card-body.informacion{
+
+.card-body.informacion {
     padding: 0%;
     padding-left: 1rem;
     padding-right: 1rem;
-    margin:0rem 1rem 0rem 1rem;
+    margin: 0rem 1rem 0rem 1rem;
 }
-.card-img-top.informacion{
+
+.card-img-top.informacion {
     height: 4rem !important;
     width: 4rem !important;
 }
-.col.informacion{
+
+.col.informacion {
     margin: 0%;
     padding: 0%;
 }
-.card-link.informacion,.card-link.infolegal{
+
+.card-link.informacion,
+.card-link.infolegal {
     text-decoration: none;
 }
-.separadorinfo{
+
+.separadorinfo {
     width: 1px !important;
     background-color: rgba(205, 218, 213, 0.603) !important;
     height: 5rem !important;
@@ -541,83 +563,104 @@ td.categorias:hover>.card.categorias>.card-body.categorias>.card-text.categorias
     margin-top: 5rem;
 
 }
-.col.infolegal{
+
+.col.infolegal {
     margin-right: 2rem;
 }
-.card.infolegal{
+
+.card.infolegal {
     border-width: 1px !important;
-    border-color:rgba(205, 218, 213, 0.603) ;
+    border-color: rgba(205, 218, 213, 0.603);
     height: 100%;
 }
-.img.logoslegales{
+
+.img.logoslegales {
     height: 3rem !important;
     width: auto;
     align-self: flex-end;
 }
-.col.logoslegales{
+
+.col.logoslegales {
     text-align: right;
 }
+
 /* #endregion */
 
-a.masinfo{
+a.masinfo {
     text-decoration: none;
 }
-p.masinfo{
-    font-size:small;
+
+p.masinfo {
+    font-size: small;
     color: black;
 }
-.col.masinfo{
+
+.col.masinfo {
     padding: 0%;
     margin: 0%;
-    
+
 }
-p.masinfofinal{
-    font-size:small;
+
+p.masinfofinal {
+    font-size: small;
     color: black;
     text-align: left;
     padding: 0%;
     margin: 0%;
     margin-left: 2rem;
 }
-.container.masinfo{
 
-background-color: #fff;
+.container.masinfo {
+
+    background-color: #fff;
 }
-.navmasinfo, .container-fluid.masinfo{
-    
-    background-color: #f7f7f7;
-    }
-    .container-fluid.navmasinfo.boton{
-        background-color: #fff;
-    }
 
-.footer.masinfo{
+.navmasinfo,
+.container-fluid.masinfo {
+
+    background-color: #f7f7f7;
+}
+
+.container-fluid.navmasinfo.boton {
+    background-color: #fff;
+}
+
+.footer.masinfo {
     padding: 0% !important;
 }
-.col-6.navmasinfo,.col.navmasinfo{
+
+.col-6.navmasinfo,
+.col.navmasinfo {
     margin: 0;
     padding: 0%;
     text-align: left;
 }
-a.navmasinfo,.list-group-item.navmasinfo,.card.navmasinfo{
+
+a.navmasinfo,
+.list-group-item.navmasinfo,
+.card.navmasinfo {
     background-color: #f7f7f7;
     padding: 0%;
     margin: 0%;
     width: 10rem;
     border-color: transparent;
- font-size: smaller;   
- text-decoration: none;
- color: black;
+    font-size: smaller;
+    text-decoration: none;
+    color: black;
 }
-.navbar-toggler.navmasinfo,.align-items-center.navmasinfo{
-    background-color:#f7f7f7 ;
+
+.navbar-toggler.navmasinfo,
+.align-items-center.navmasinfo {
+    background-color: #f7f7f7;
     border: 1px solid #eee;
-    
+
 }
+
 .navbar.navbar-light.navmasinfo {
-    border-top:1px solid #eee;
+    border-top: 1px solid #eee;
 }
-.container-fluid.navmasinfo.boton{
+
+.container-fluid.navmasinfo.boton {
     border-bottom: #eee solid 1px;
     margin-bottom: -2px;
 }
